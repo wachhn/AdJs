@@ -8,13 +8,23 @@
 </head>
 <body>
     <script>
-        
-        num=[];
-        for(i=0 ; i<=5; i++){
-            num[i] = (prompt("Enter Number"));
-                console.log(num[i]);
+        function sumput(){
+            let num=[];
+            let i=0;
+            let sum = 0
+            
+            while(true){
+                num[i] = +prompt("Enter Number");
+                if(isNaN(num[i])) {
+                    break;
+                }
+                sum += num[i]  
+                i++
+            }
+            return sum
         }
 
+       
     </script>
 </body>
 </html>
